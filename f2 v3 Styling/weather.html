@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather-styles.css">
+    <meta name = "title" content = "weatherNSS">
+    <meta name = "description" content = "weather forecast using openweather api nss">
+
+</head>
+<body>
+    <h1>Weather</h1>
+
+    <div id="searchdiv">
+        <input type="text" placeholder = "EnterCity" id = "searchBar">
+        <button id = "searchButton">Search</button>
+        <h3 id="instruction">Enter City name to display weather...!</h3>
+    </div>
+
+
+    <div class ="weather">
+            <div class="sub-card">
+                <div class="line1-left">
+                    <h2 id="city-name">City Name </h2>
+                    <span id="main-emoji">☀️</span>
+                </div>
+
+                <div id="line2-left">
+                    <h3 class = "temp" id="temp">25 </h3>
+                    <h3 id="degree-celciusMain">°C</h3>
+                    <div id="min-max">
+                        <h3 id = "temp_max">20 °C</h3>
+                        <h3 id = "temp_min"> | 32 °C<h3> 
+                    </div>
+
+
+                </div>
+
+                
+                <h3 id="description">sunny </h3>
+                <h3 id = "feels_like">Feels like: </h3>
+                <h3 id = "humidity">Humidity: </h3>
+           
+            </div>
+        <div class="sub-card">
+            <h3 id="aqi">Air Quality Index : Good </h3>
+            <h3 id="speed">Wind Speed: </h3>
+            <h3 id="deg">Wind Direction: </h3>
+            <h3 id="sunrise">Sunrise: 🌅 </h3>
+            <h3 id="sunset">Sunset: 🌇 </h3>
+        </div>
+        <div class="sub-card">
+            <h3 id = "pressure">Pressure: </h3>
+            <h3 id = "sea_level">Sea Level: </h3>
+            <h3 id="grnd_level">Ground Level: </h3>
+
+        </div>
+
+
+    </div>
+    
+    <div id="forecast-container">
+        <div id="forecast-container">
+            <div class="forecast">
+                <div class="forecast-top">
+                    <h3 id="descriptionThreeF">☀️</h3>
+                    <h3 id="tempThreeF">°C</h3>
+                </div>
+                <h3 id="date-timeThreeF">Date&Time</h3>
+            </div>
+            
+            <div class="forecast">
+                <div class="forecast-top">
+                    <h3 id="descriptionSixF">☀️</h3>
+                    <h3 id="tempSixF">°C</h3>
+                </div>
+                <h3 id="date-timeSixF">Date&Time</h3>
+            </div>
+            
+            <div class="forecast">
+                <div class="forecast-top">
+                    <h3 id="descriptionNineF">☀️</h3>
+                    <h3 id="tempNineF">°C</h3>
+                </div>
+                <h3 id="date-timeNineF">Date&Time</h3>
+            </div>
+            
+            <div class="forecast">
+                <div class="forecast-top">
+                    <h3 id="descriptionTwelveF">☀️</h3>
+                    <h3 id="tempTwelveF">°C</h3>
+                </div>
+                <h3 id="date-timeTwelveF">Date&Time</h3>
+            </div>
+            
+            <div class="forecast">
+                <div class="forecast-top">
+                    <h3 id="descriptionFifteenF">☀️</h3>
+                    <h3 id="tempFifteenF">°C</h3>
+                </div>
+                <h3 id="date-timeFifteenF">Date&Time</h3>
+            </div>
+            
+            <div class="forecast">
+                <div class="forecast-top">
+                    <h3 id="descriptionEighteenF">☀️</h3>
+                    <h3 id="tempEighteenF">°C</h3>
+                </div>
+                <h3 id="date-timeEighteenF">Date&Time</h3>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
